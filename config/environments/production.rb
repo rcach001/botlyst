@@ -77,5 +77,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   # Required for Devise. Remember to change localhost:3000 to actual application host
-  onfig.action_mailer.default_url_options = { host: 'http://botlyst.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'http://botlyst.herokuapp.com' }
 end
