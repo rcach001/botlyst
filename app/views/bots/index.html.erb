@@ -24,7 +24,7 @@
         <td><%= link_to bot.website, bot.website %></td>
         <td><%= link_to 'Show', bot, class: "btn btn-link" %></td>
         <td><%= link_to 'Edit', edit_bot_path(bot), class: "btn btn-link" %></td>
-        <td><%= link_to 'Destroy', bot, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
+        <td><%= link_to 'Delete', bot, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,5 @@
 
 <br>
 
-<%= link_to 'New Bot', new_bot_path, class:"btn btn-link" %>
+<%= link_to 'Add Bot', new_bot_path, class:"btn btn-default", type:"button" %>
+<br>
